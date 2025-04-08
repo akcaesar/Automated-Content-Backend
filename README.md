@@ -9,33 +9,21 @@ Text input > summarize > fetch stock images and combine > voice over (with summa
 
 
 Folder structure:
-blog-to-video/
-├── backend/
-│   ├── src/
-│   │   ├── core/              # Configuration and shared utilities
-│   │   │   ├── config.py      # Environment variables
-│   │   │   └── database.py    # DB connection (if needed)
-│   │   ├── modules/
-│   │   │   ├── summarization/ # AI text processing
-│   │   │   │   ├── router.py
-│   │   │   │   └── service.py
-│   │   │   ├── tts/          # Text-to-speech module
-│   │   │   ├── video/        # Video generation logic
-│   │   │   └── uploads/      # Social media integration
-│   │   ├── models/           # Pydantic schemas
-│   │   ├── utils/            # Helper functions
-│   │   └── main.py           # FastAPI app instance
-│   ├── requirements.txt
-│   ├── Dockerfile
-│   └── alembic/              # Database migrations
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/       # React components
-│   │   ├── pages/            # Next.js routes
-│   │   ├── services/         # API clients
-│   │   └── styles/
-│   ├── package.json
-│   └── next.config.js
-├── scripts/                  # Deployment/utility scripts
-└── .env                      # Environment variables
+backend/
+├── src/
+│   ├── core/              # Configuration and shared utilities
+│   │   ├── config.py      # Environment variables and settings
+│   └── modules/           # Feature-specific modules (summarization, TTS, video generation)
+│       ├── summarization/ # Summarization logic
+│       │   ├── router.py  # API routes for summarization
+│       │   └── service.py # Business logic for summarization
+│       ├── tts/           # Text-to-speech logic
+│       │   ├── router.py  # API routes for TTS
+│       │   └── service.py # Business logic for TTS
+│       ├── video/         # Video generation logic
+│       │   ├── router.py  # API routes for video generation
+│       │   └── service.py # Business logic for video generation
+│   ├── utils/             # Helper functions (e.g., image fetching)
+│   ├── models/            # Pydantic models for request validation
+│   └── main.py            # FastAPI app entry point
+└── requirements.txt       # Python dependencies
