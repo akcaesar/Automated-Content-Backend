@@ -5,3 +5,7 @@ This project takes some text input, and makes a short video/reel that can be sav
 
 Overview:
 Text input > summarize > fetch stock images and combine > voice over (with summarized content) > combine with stock images > save video or post on Youtube
+
+
+
+Folder structure:
