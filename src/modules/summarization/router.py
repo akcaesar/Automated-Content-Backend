@@ -8,6 +8,7 @@ from huggingface_hub import InferenceClient
 from dotenv import load_dotenv
 import os
 
+load_dotenv()
 hftoken = os.getenv('HF_TOKEN')
 
 # Hugging Face API Client
