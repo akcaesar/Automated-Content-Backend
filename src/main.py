@@ -13,5 +13,5 @@ from modules.video.router import router as video_router
 app = FastAPI()
 
 app.include_router(summarization_router.router, tags=["Summarization"])
-app.include_router(tts_router, prefix="/tts", tags=["Text-to-Speech"])
+app.include_router(tts_router, tags=["Text-to-Speech"])
 app.include_router(video_router, prefix="/video", tags=["Video Generation"])
