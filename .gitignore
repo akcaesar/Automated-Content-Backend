@@ -1,7 +1,0 @@
-.env
-__pycache__/test_main.cpython-310-pytest-8.3.5.pyc
-src/__pycache__/main.cpython-310.pyc
-src/modules/summarization/__pycache__/router.cpython-310.pyc
-src/utils/__pycache__/http_client.cpython-310.pyc
-src/modules/summarization/__pycache__/router.cpython-310.pyc
-src/__pycache__/main.cpython-310.pyc
